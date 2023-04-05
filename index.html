@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css.css">
+  <title>Визитка</title>
+</head>
+<body id="body">
+  <header>
+    <!-- first slide  -->
+
+   <div>
+      <div class="face"> <div class="border-face"><img src="img/face.jpg" alt=""> </div>
+        <div class="modal-block" id="modalWindowActive">
+          <p> Обо мне: </p>
+        </div></div>
+      <h1 id="title" class="header-title"> Добро пожаловать <span class="title-section"> в мою библиотеку</span> </h1>
+      <picture>
+          <div class="github social"> <a href=""> <img src="img/icons8-github.svg" alt=""> </a> </div>
+            <div class="telegram social"><a href=""> <img src="img/icons8-telegram.svg" alt=""></a></div>
+            <div class="vk social"><a href=""><img src="img/icons8-vk-com.svg" alt=""> </a></div>
+        </picture>
+       </div>
+       <!-- first slide -->
+
+
+     <!-- modal block -->
+   <div class="dark" id="darkStyle">
+    <div class="container">
+      <div class="modal-window" id="modalWindow">
+        <div class="wrapper">
+          <div class="modal-face"> <img class="modal-window-face-block" src="img/face.jpg" alt=""> <div class="modal-title">
+            <h1>  Краснов Алексей Юрьевич </h1> 
+            <p> Frontend Web Developer</p> 
+            <ul>
+              <li> <img src="img/icons8-маркер-30.png" alt=""></li>
+              <li> Россия г. Кострома </li>
+            </ul>
+           </div>
+          </div>
+          <div class="exp"> 
+            <h2> Опыт работы: </h2>
+            <ul>
+              <li class="Free"> Фриланс
+                <ul> 
+                  <li> Разработка сайта в команде из 3 человек: фронденд, бэкенд, дизайнер </li>
+                  <li>Работа с базой данных</li>
+                  <li>Работа с API</li>
+                  <li>Разработка простых браузерных игр</li>
+                  <li>Верстка сайтов различной сложности</li>
+                  <li>Адаптивная верстка</li>
+                </ul>  
+              </li>
+            </ul>  
+          </div>
+        </div>
+        <div class="softskills">
+          <h2> Soft Skills</h2>
+          <ul> 
+            <li><span> Командный игрок</span> - люблю рабоать в команде с четким разделением обязанностей, помогать(если в силах) членам команды и не боюсь просить помощи сам.</li>
+            <li> <span>Постоянное обучение</span> - часто провожу время за изучением разных проектов, разбираю сложные механики и конструкции, интересуюсь улучшением качества своего продукта.</li>
+            <li> <span>Не конфликтный человек</span> - не избегаю проблем, а умею решать их.</li>
+            <li> <span>Умею четко ставить дедлайны и расчитывать время. Стараюсь грамотно разбивать задачи, чтобы не приходилось тратить слишком много времени на решение минутных проблем</span></li>
+            <li> <span>Ответсвенно подхожу к своему продукту и своим решениям</span> - я отвечаю за каждый кусок кода, который написал и за каждое свое решение.</li>
+            <li>  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="exit" id="exitBtn"> <img src="img/exit-contact-menu.svg" alt=""></div>
+  </div>
+  <!-- modal block  -->
+  </header>
+
+  <!-- navigation menu -->
+  <nav id="nav">
+      <div id="slide1" class="slidelist one"> Главная страница </div>
+      <div id="slide2" class="slidelist two"> Навыки </div>
+      <div id="slide3" class="slidelist three"> Библиотека </div>
+      <div id="slide4" class="slidelist four"> </div>
+  </nav>
+   <!-- navigation menu -->
+
+
+   <!-- skills / two slide -->
+  <section> 
+      <div>
+        <div id="sectionSkill"></div>
+        <h2 id="skill"> Навыки: </h2>
+        <picture> 
+          <div class="JS"><img src="img/icons8-javascript.svg" alt="">
+            <img src="img/icons8-реакция.svg" alt="">
+            <img src="img/icons8-typescript.svg" alt="">
+          </div >
+         <div class="HTML"> <img src="img/icons8-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-96.png" alt=""></div>
+         <div class="CSS"> <img src="img/icons8-css3.svg" alt="">
+          <img src="img/icons8-sass.svg" alt="">
+        </div>
+        <div class="CSS"> <img src="img/icons8-gulp.svg" alt="">
+          <img id="twoSlide" src="img/icons8-webpack.svg" alt="">
+        </div>
+        <div class="CSS"> <img src="img/icons8-figma.svg" alt="">
+        </div>
+        <div class="CSS"> <img src="img/icons8-git.svg" alt="">
+        </div>
+        </picture>
+      </div>
+  </section>
+     <!-- skills / two slide -->
+  <main id="library">
+    <div class="javascript-task"> <div class="image library-block"> <a href="JS__project/index.html"><img src="img/JavaSсript.jpg" alt=""></a></div>  <p> Проекты, основанные на JS - калькулятор, игры, генератор паролей и многое другое<br> <span>(Раздел регулярно пополняется)</span></p> </div>
+    <div class="website"> <div class="image library-block"> <a target="_blank" href="Web-site/index.html"><img src="img/website.jpg" alt=""></a></div>  <p> Веб сайты - лендинги, интернет магазины, блоги<br> <span>(Раздел регулярно пополняется)</span></p> </div>
+    <div class="animation"> <div class="image library-block"><a target="_blank" href="animation/index.html"><img src="img/photo_2023-04-04_21-30-29.jpg" alt=""></a></div>  <p> Анимации <br> <span>(Раздел регулярно пополняется)</span></p> </div>
+    
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
