@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Js-project</title>
+</head>
+<body>
+    <header>
+      <h1> Добро пожаловать в JS проекты </h1>
+      <p>Здесь я собрал проекты, которые показались мне наиболее интересными, в основе которых лежит JS</p>
+    </header>
+    <main> 
+      <ul class="main-list"> 
+        <li> <ul class="item-list"> 
+          <li class="item One">
+            <!-- First project - random password -->
+            <div class="random__password">
+            <div class="output">Your password - <span class="password"></span></div>
+          
+            <div class="chexbox"><input type="checkbox" id="checkbox-spec" value="true"> <p>Спец. символы</p> </div>
+          
+            <div class="chexbox"><input type="checkbox" id="checkbox-dop" value="true"> <p>Доп. символы</p></div>
+          
+           <div class="btn">
+              <button id="btn" onclick="password()">Сlick to get password </button>
+           </div>
+        
+          </div></li>
+          <li class="item Two"><p> Генератор паролей , основанный на 3 случайностях, а так же текущем времени.</p></li>
+        </ul></li>  
+        <li>
+          <ul class="item-list">  
+            <li class="item Two"> </li>
+            <li class="item One"> </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
