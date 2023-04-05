@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
   background-color: #ebcfa6;
   font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
 }
 
 header {
