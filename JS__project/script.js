@@ -89,7 +89,6 @@ function password() {
   
 }
 
-
 // calc
 
 num0.addEventListener('click',function () {
@@ -154,3 +153,17 @@ comma.addEventListener('click',function () {
 equals.addEventListener('click',function () {
   output.innerHTML = eval(output.innerHTML)
 })
+
+
+let equation = "23123 + 32123";
+let parts = equation.match(/(\d+)\s*([+\-*\/])\s*(\d+)/);
+
+let firstNumber = parts[1];
+let operator = parts[2];
+let secondNumber = parts[3];
+
+console.log("Первое число: " + firstNumber);
+console.log("Оператор: " + operator);
+console.log("Второе число: " + secondNumber);
+
+

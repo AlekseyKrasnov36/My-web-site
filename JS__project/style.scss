@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import '_randompassword';
+@import '_calc';
+body{
+  background-color: rgb(235, 207, 166);
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+}
+header{
+    width: 100vw;
+    font-size: 34px;
+    text-align: center;
+}
+main{
+  width: 80vw;
+  font-size: 25px;
+  align-items: center;
+  margin: 0 auto;
+  .main-list{
+    list-style: none;
+    width: 80vw;
+  }
+  .item-list{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  .item{
+    height: 30vh;
+    margin-top: 100px;
+  }
+  .One{
+    width: 50vw;
+  }
+  .Two{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    p{
+      padding:0;
+      margin: 0;
+      justify-content: center;
+    }
+  }
+}
