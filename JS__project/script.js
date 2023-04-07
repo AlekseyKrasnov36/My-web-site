@@ -88,3 +88,69 @@ function password() {
   return end
   
 }
+
+
+// calc
+
+num0.addEventListener('click',function () {
+  output.innerHTML += '0'
+})
+num1.addEventListener('click',function () {
+  output.innerHTML += '1'
+})
+num2.addEventListener('click',function () {
+  output.innerHTML += '2'
+})
+num3.addEventListener('click',function () {
+  output.innerHTML += '3'
+})
+num4.addEventListener('click',function () {
+  output.innerHTML += '4'
+})
+num5.addEventListener('click',function () {
+  output.innerHTML += '5'
+})
+num6.addEventListener('click',function () {
+  output.innerHTML += '6'
+})
+num7.addEventListener('click',function () {
+  output.innerHTML += '7'
+})
+num8.addEventListener('click',function () {
+  output.innerHTML += '8'
+})
+num9.addEventListener('click',function () {
+  output.innerHTML += '9'
+})
+outputnone.addEventListener('click', function () {
+  output.innerHTML = ' '
+})
+negative.addEventListener('click', function () {
+  output.innerHTML = '-' + output.innerHTML
+})
+percent.addEventListener('click', function () {
+  output.innerHTML = output.innerHTML / 100
+})
+divide.addEventListener('click', function () {
+  output.innerHTML += '/'
+})
+numx.addEventListener('click',function () {
+  output.innerHTML += ' * '
+})
+minus.addEventListener('click',function () {
+  output.innerHTML += ' - '
+})
+positive.addEventListener('click',function () {
+  output.innerHTML += ' + '
+})
+comma.addEventListener('click',function () {
+  let j = output.innerHTML;
+  if (j.includes('.')) {
+    output.innerHTML += ''
+  } else{
+    output.innerHTML += '.'
+  }
+})
+equals.addEventListener('click',function () {
+  output.innerHTML = eval(output.innerHTML)
+})
