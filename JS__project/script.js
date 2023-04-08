@@ -91,38 +91,12 @@ function password() {
 
 // calc
 
-num0.addEventListener('click',function () {
-  output.innerHTML += '0'
-})
-num1.addEventListener('click',function () {
-  output.innerHTML += '1'
-})
-num2.addEventListener('click',function () {
-  output.innerHTML += '2'
-})
-num3.addEventListener('click',function () {
-  output.innerHTML += '3'
-})
-num4.addEventListener('click',function () {
-  output.innerHTML += '4'
-})
-num5.addEventListener('click',function () {
-  output.innerHTML += '5'
-})
-num6.addEventListener('click',function () {
-  output.innerHTML += '6'
-})
-num7.addEventListener('click',function () {
-  output.innerHTML += '7'
-})
-num8.addEventListener('click',function () {
-  output.innerHTML += '8'
-})
-num9.addEventListener('click',function () {
-  output.innerHTML += '9'
-})
+
+function number(num) {
+  output.innerHTML += num;
+}
 outputnone.addEventListener('click', function () {
-  output.innerHTML = ' '
+  output.innerHTML = null
 })
 negative.addEventListener('click', function () {
   output.innerHTML = '-' + output.innerHTML
@@ -131,10 +105,11 @@ percent.addEventListener('click', function () {
   output.innerHTML = output.innerHTML / 100
 })
 divide.addEventListener('click', function () {
-  output.innerHTML += '/'
+  output.innerHTML += ' / '
 })
 numx.addEventListener('click',function () {
   output.innerHTML += ' * '
+
 })
 minus.addEventListener('click',function () {
   output.innerHTML += ' - '
@@ -143,27 +118,27 @@ positive.addEventListener('click',function () {
   output.innerHTML += ' + '
 })
 comma.addEventListener('click',function () {
-  let j = output.innerHTML;
-  if (j.includes('.')) {
-    output.innerHTML += ''
-  } else{
-    output.innerHTML += '.'
-  }
+  output.innerHTML += '.'
 })
 equals.addEventListener('click',function () {
-  output.innerHTML = eval(output.innerHTML)
+  j = output.innerHTML;
+  let operator = j.split(' ');
+  switch (operator[1]) {
+    case '+':
+      output.innerHTML = Number(operator[0]) + Number(operator[2]); 
+      break;
+      case '-':
+      output.innerHTML = Number(operator[0]) - Number(operator[2]); 
+      break;
+      case '*':
+      output.innerHTML = Number(operator[0]) * Number(operator[2]); 
+      break;
+      case '/':
+      output.innerHTML = Number(operator[0]) / Number(operator[2]); 
+      break;
+    
+    default:output.innerHTML = 'Введите другой пример';
+      break;
+  }
 })
-
-
-let equation = "23123 + 32123";
-let parts = equation.match(/(\d+)\s*([+\-*\/])\s*(\d+)/);
-
-let firstNumber = parts[1];
-let operator = parts[2];
-let secondNumber = parts[3];
-
-console.log("Первое число: " + firstNumber);
-console.log("Оператор: " + operator);
-console.log("Второе число: " + secondNumber);
-
 
