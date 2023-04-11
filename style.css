@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 body {
-  overflow-x: hidden;
   background-color: #ebcfa6;
   font-family: 'Cormorant Garamond', serif;
   overflow: hidden;
 }
 
 header {
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,27 +15,7 @@ header {
   padding-bottom: 100px;
 }
 
-header .face {
-  display: flex;
-}
-
-header .face .border-face {
-  width: 16.146vw;
-  height: 31.708vh;
-  background-color: whitesmoke;
-  border-radius: 50%;
-  display: flex;
-  margin-left: 120px;
-}
-
-header .face .border-face img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  margin: auto;
-}
-
-header .face .modal-block {
+header .modal-block {
   height: 7.704vh;
   background-color: blanchedalmond;
   display: flex;
@@ -44,16 +23,150 @@ header .face .modal-block {
   border-radius: 30px;
   box-shadow: 3px 3px 10px #804141;
   cursor: pointer;
-  animation: aboutMe 2s;
-  animation-iteration-count: infinite;
 }
 
-header .face .modal-block:hover {
+header .modal-block:hover {
   box-shadow: 1px 1px 5px #804141;
 }
 
-header .face .modal-block p {
+header .modal-block p {
   padding: 0px 10px 0px 10px;
+}
+
+header .opacityOn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .overflowOn {
+  overflow: hidden;
+}
+
+header .container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+header .dark {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.4);
+  z-index: 1;
+  overflow: hidden;
+}
+
+header .modal-window {
+  width: 80vw;
+  height: 80vh;
+  background-color: #ebcfa6;
+  border-radius: 80px;
+  z-index: 2;
+  display: flex;
+  padding: 10px;
+}
+
+header .modal-window .modal-face {
+  display: flex;
+  width: 31.250vw;
+  height: 30.644vh;
+}
+
+header .modal-window .modal-face .modal-window-face-block {
+  border-top-left-radius: 80px;
+  width: 15.625vw;
+  height: 30.644vh;
+}
+
+header .modal-window .modal-face h1 {
+  margin: 0;
+  text-align: left;
+}
+
+header .modal-window .modal-face .modal-title {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+header .modal-window .modal-face .modal-title p {
+  font-size: 25px;
+}
+
+header .modal-window .modal-face .modal-title ul {
+  list-style: none;
+  padding: 0;
+}
+
+header .modal-window .exp {
+  width: 31.250vw;
+  height: 10.215vh;
+  padding-top: 50px;
+  font-size: 25px;
+}
+
+header .modal-window .exp h2 {
+  text-align: center;
+  margin: 0;
+}
+
+header .modal-window ul {
+  list-style: none;
+}
+
+header .modal-window ul li {
+  margin-top: 5px;
+  text-align: left;
+}
+
+header .exit {
+  position: fixed;
+  right: 0;
+  padding-right: 6.250vw;
+  padding-top: 50px;
+  cursor: pointer;
+}
+
+header .softskills {
+  width: 46.875vw;
+  font-size: 20px;
+}
+
+header .softskills h2 {
+  text-align: center;
+}
+
+header .softskills span {
+  font-weight: 900;
+}
+
+header .softskills ul li {
+  margin-top: 15px;
+}
+
+header .face {
+  display: flex;
+}
+
+header .face .border-face {
+  width: 16.146vw;
+  height: auto;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 120px;
+}
+
+header .face .border-face img {
+  width: 15.625vw;
+  height: auto;
+  border-radius: 50%;
+  margin: auto;
 }
 
 header picture {
@@ -65,18 +178,20 @@ header .social {
   background-color: white;
   width: 80px;
   background-color: #ebcfa6;
-  animation: social 3s;
+}
+
+header .social .vk {
+  margin-top: 100px;
+  display: flex;
 }
 
 header h1 {
   width: 30vw;
   text-align: center;
   overflow: hidden;
-  animation-name: h1Text;
-  animation-duration: 2s;
 }
 
-nav {
+header nav {
   position: fixed;
   display: flex;
   align-items: center;
@@ -87,7 +202,7 @@ nav {
   gap: 30px;
 }
 
-nav div {
+header nav div {
   color: beige;
   margin-bottom: 5px;
   font-size: 25px;
@@ -97,196 +212,94 @@ nav div {
   cursor: pointer;
 }
 
-nav .slidelist:hover {
+header nav .slidelist:hover {
   border-bottom: 1px solid black;
 }
 
-nav .active {
+header nav .active {
   margin-bottom: 15px;
   border-bottom: 1px solid black;
 }
 
-section {
-  width: 80vw;
-  height: 130vh;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-section #sectionSkill {
-  height: 200px;
-}
-
-section div {
-  margin: 0 auto;
-}
-
-section h2 {
-  margin: 0 auto;
-  width: 10vw;
-  font-size: 40px;
-  display: inline-block;
-  margin-left: 300px;
-}
-
-section picture {
-  width: 40vw;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 200px;
-}
-
-.JS, .CSS {
-  width: 100px;
-}
-
-.JS img, .CSS img {
-  margin-bottom: 50px;
-  border-radius: 50%;
-}
-
-.opacityOn {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.overflowOn {
-  overflow: hidden;
-}
-
-.container {
-  position: absolute;
+header .modal-block {
+  height: 7.704vh;
+  background-color: blanchedalmond;
   display: flex;
   align-items: center;
-  justify-content: center;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-}
-
-.dark {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(128, 128, 128, 0.4);
-  z-index: 1;
-  overflow: hidden;
-}
-
-.modal-window {
-  width: 80vw;
-  height: 80vh;
-  min-height: 500px;
-  background-color: #ebcfa6;
-  border-radius: 80px;
-  z-index: 2;
-  display: flex;
-  padding: 10px;
-}
-
-.modal-window .modal-face {
-  display: flex;
-  width: 600px;
-  height: 300px;
-}
-
-.modal-window .modal-face .modal-window-face-block {
-  border-top-left-radius: 80px;
-  width: 300px;
-  height: 300px;
-}
-
-.modal-window .modal-face h1 {
-  margin: 0;
-  text-align: left;
-}
-
-.modal-window .modal-face .modal-title {
-  font-size: 20px;
-  padding-left: 30px;
-}
-
-.modal-window .modal-face .modal-title p {
-  font-size: 25px;
-}
-
-.modal-window .modal-face .modal-title ul {
-  list-style: none;
-  padding: 0;
-}
-
-.modal-window .exp {
-  width: 600px;
-  height: 100px;
-  padding-top: 50px;
-  font-size: 25px;
-}
-
-.modal-window .exp h2 {
-  text-align: center;
-  margin: 0;
-}
-
-.modal-window ul {
-  list-style: none;
-}
-
-.modal-window ul li {
-  margin-top: 5px;
-  text-align: left;
-}
-
-.exit {
-  position: fixed;
-  right: 0;
-  padding-right: 120px;
-  padding-top: 50px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px #804141;
   cursor: pointer;
 }
 
-.softskills {
-  width: 900px;
-  font-size: 20px;
+header .modal-block:hover {
+  box-shadow: 1px 1px 5px #804141;
 }
 
-.softskills h2 {
+header .modal-block p {
+  padding: 0px 10px 0px 10px;
+}
+
+#sectionSkill {
+  height: 200px;
+}
+
+.skills-title {
+  display: flex;
+  width: 99vw;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  height: 100vh;
+}
+
+.container section {
+  width: 8.333vw;
   text-align: center;
+  align-items: center;
 }
 
-.softskills span {
-  font-weight: 900;
+.container section img {
+  width: 80px;
 }
 
-.softskills ul li {
-  margin-top: 15px;
+.container section img h3 {
+  white-space: nowrap;
 }
 
-main {
-  width: 80vw;
+#library {
+  width: 99vw;
   height: 120vh;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   display: flex;
-  gap: 100px;
+  gap: 5.208vw;
   font-size: 30px;
   font-weight: 700;
 }
 
-main span {
+#library span {
   color: #e41c48;
 }
 
-main div {
-  width: 400px;
-  height: 400px;
+#library div {
+  width: 20.833vw;
+  height: auto;
   margin: 0;
   text-align: center;
+  align-items: center;
 }
 
-main .library-block img {
-  border-radius: 30px;
+#library .animation {
+  cursor: no-drop;
+}
+
+#library img {
+  width: 20.833vw;
+  height: auto;
 }
